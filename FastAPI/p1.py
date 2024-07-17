@@ -2,10 +2,18 @@ from fastapi import FastAPI
 
 app=FastAPI()
 
-@app.get("/welcome")
-async def welcome():
+@app.get("/index")
+async def index():
     return{"Welcome !! To our Bot Page"}
 
-@app.get("/hello")
+@app.get("/about")
 async def hello():
-    return {"Hello !!"}
+    return {"About !!"}
+
+@app.get("/contact")
+async def hello():
+    return {"Contact !!"}
+
+@app.get("/refererence")
+async def hello():
+    return {"Reference !!"}
